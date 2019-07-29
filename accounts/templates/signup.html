@@ -1,0 +1,43 @@
+<header>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</header>
+
+<body>
+    <form  method="POST" action="{% url 'signup' %}">
+        {% csrf_token %}
+        <br>
+        이름:
+        <br>
+        <input name="user_name" type="text">
+        <br>
+        ID:
+        <br>
+        <input name="username" type="text" >
+        <br>
+        Password:
+        <br>
+        <input name="password1" type="password">
+        <br>
+        Confirm Password:
+        <br>
+        <input name="password2" type="password">
+        <br>
+        Phone number:
+        <br>
+        <input name="user_hp" type="integer">
+        <br>
+        PR:
+        <br>
+        <input name="user_pr" type="text">
+        <br>
+        학번:
+        <br>
+        <input name="user_num" type="integer">
+        <br>
+        성별:
+        <br>
+        <input name="user_mw" type="char">
+        <br><br>
+        <input class="btn btn-primary" type="submit" value="sign up">
+    </form>
+</body>
